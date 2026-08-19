@@ -44,4 +44,4 @@ Oduncu is free and open. If it makes your sessions quieter, a [coffee](https://b
 
 ### Projeyi desteklemek
 
-Oduncu ücretsiz ve açık. Oturumlarını sessizleştiriyorsa bir [kahve](https://buymeacoffee.com/erayendes) ☕ makbule geçer ama asla beklenmez.
+Oduncu ücretsiz ve açık. Oturumlarını sessizleştiriyorsa bir [kahve](https://buymeacoffee.com/erayendes) ☕ makbule geçer.
