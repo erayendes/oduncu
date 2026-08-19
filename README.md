@@ -4,7 +4,7 @@
 > 
 > — *tamam.*
 
-![oduncu.png](assets/oduncu.png)
+<img src="assets/oduncu.png" alt="oduncu" width="520">
 
 🇹🇷 [Türkçe](#oduncu) · 🇬🇧 [English](#english)
 
@@ -50,7 +50,7 @@ Test çalışır, build çalışır. Her şey **o tek kelime**nin doğru olması
 
 **Köylü de bazen baş kaldırır.** Ama sor bir niye.
 
-![guvenlik.png](assets/guvenlik.png)
+<img src="assets/guvenlik.png" alt="güvenlik" width="440">
 
 Bunlar stil değil, güvenlik.
 
@@ -164,7 +164,7 @@ Tests run, builds run. All of it so that **that single word** is true.
 
 **Even the villager talks back sometimes.** But ask him why first.
 
-![guvenlik.png](assets/guvenlik.png)
+<img src="assets/guvenlik.png" alt="güvenlik" width="440">
 
 These aren't style, they're safety.
 
