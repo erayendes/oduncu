@@ -6,11 +6,14 @@
 
 <img src="assets/oduncu.png" alt="oduncu" width="520">
 
-[![npm](https://img.shields.io/npm/v/oduncu?style=flat-square&color=cb3837&label=npm)](https://www.npmjs.com/package/oduncu)
-[![CI](https://img.shields.io/github/actions/workflow/status/erayendes/oduncu/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/erayendes/oduncu/actions/workflows/ci.yml)
-[![lisans](https://img.shields.io/badge/lisans-MIT-blue?style=flat-square)](./LICENSE)
-[![bağımlılık](https://img.shields.io/badge/ba%C4%9F%C4%B1ml%C4%B1l%C4%B1k-0-brightgreen?style=flat-square)](./package.json)
-![yerli üretim](https://img.shields.io/badge/yerli-%C3%BCretim-e30a17?style=flat-square)
+[![npm version](https://img.shields.io/npm/v/oduncu.svg)](https://www.npmjs.com/package/oduncu)
+[![npm downloads](https://img.shields.io/npm/dm/oduncu.svg)](https://www.npmjs.com/package/oduncu)
+[![CI](https://github.com/erayendes/oduncu/actions/workflows/ci.yml/badge.svg)](https://github.com/erayendes/oduncu/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Bağımlılık](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
+[![Yerli üretim](https://img.shields.io/badge/%F0%9F%A4%9D-YERL%C4%B0%20%C3%9CRET%C4%B0M-red)](https://github.com/erayendes)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-ea4aaa.svg?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/erayendes)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00.svg?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/erayendes)
 
 🇹🇷 [Türkçe](#oduncu) · 🇬🇧 [English](#english)
 
