@@ -6,11 +6,7 @@
 
 <img src="assets/oduncu.png" alt="oduncu" width="520">
 
-[![npm version](https://img.shields.io/npm/v/oduncu.svg)](https://www.npmjs.com/package/oduncu)
-[![npm downloads](https://img.shields.io/npm/dm/oduncu.svg)](https://www.npmjs.com/package/oduncu)
-[![CI](https://github.com/erayendes/oduncu/actions/workflows/ci.yml/badge.svg)](https://github.com/erayendes/oduncu/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Bağımlılık](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
 [![Yerli üretim](https://img.shields.io/badge/%F0%9F%A4%9D-YERL%C4%B0%20%C3%9CRET%C4%B0M-red)](https://github.com/erayendes)
 
 🇹🇷 [Türkçe](#oduncu) · 🇬🇧 [English](#english)
