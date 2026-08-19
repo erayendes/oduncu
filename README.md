@@ -1,6 +1,7 @@
 **Hayatını değiştiren o iki sözcük** *The two words that change everything*
 
 > — *yaparım...*
+> 
 > — *tamam.*
 
 ![oduncu.png](assets/oduncu.png)
