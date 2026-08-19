@@ -166,6 +166,8 @@ Tests run, builds run. All of it so that **that single word** is true.
 
 <img src="assets/guvenlik.png" alt="güvenlik" width="440">
 
+<sub>*The sign reads: **WARNING!** Do not start work without taking safety precautions — Safety first.*</sub>
+
 These aren't style, they're safety.
 
 - Irreversible operations (delete, force-push, deploy, payment)
