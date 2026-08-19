@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "oduncu"
+abstract: "A silent-executor skill for coding agents. Given a task the agent says \"yaparım...\", does the work, and says \"tamam.\" — no explanation, summary, code block, progress note or task list in between. One SKILL.md installs into Claude Code, Codex, Antigravity, Gemini CLI, Cursor and the Agent Skills standard."
+type: software
+authors:
+  - family-names: "Endes"
+    given-names: "Eray"
+    alias: "erayendes"
+repository-code: "https://github.com/erayendes/oduncu"
+url: "https://github.com/erayendes/oduncu"
+license: MIT
+version: 0.1.0
+date-released: "2026-08-19"
+keywords:
+  - agent-skills
+  - claude-code
+  - codex
+  - cursor
+  - llm
+  - prompt-engineering
+  - developer-tools
