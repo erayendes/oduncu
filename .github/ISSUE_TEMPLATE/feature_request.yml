@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest a command, an install target, a language row, or tighter SKILL.md wording.
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Oduncu stays deliberately small: one skill file, one installer, six commands, zero
+        dependencies. The best requests fit that shape — a new agent's skill directory, a new
+        language for the four strings, wording that stops a drift you actually observed.
+
+        Türkçe yazabilirsiniz.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: The situation you're in, not the solution you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you'd like instead
+      description: For a new install target, include the agent's global skill directory path. For a language, propose the four strings.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Checks
+      options:
+        - label: This fits in one skill file and one installer — no new dependencies or build steps.
+        - label: I checked SKILL.md and the README; this isn't already covered.

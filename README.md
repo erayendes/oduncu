@@ -1,22 +1,20 @@
-# oduncu
-
-**Hayatını değiştiren o iki sözcük** · *The two words that change everything*
+**Hayatını değiştiren o iki sözcük** *The two words that change everything*
 
 > — *yaparım...*
 > — *tamam.*
 
 ![oduncu.png](assets/oduncu.png)
 
-🇹🇷 [Türkçe](#türkçe) · 🇬🇧 [English](#english)
+🇹🇷 [Türkçe](#oduncu) · 🇬🇧 [English](#english)
 
 ---
 
-## Türkçe
+# oduncu
 
 Görev verilir, “yaparım...” der, yapar. Ne yaptığını anlatmaz, **çünkü zaten yapıyordur.**
 Bitirince “tamam.” der, başka tek kelime etmez. Çünkü o Age of Empires II'deki **köylüdür.**
 
-### Ne yapar
+## Ne yapar
 
 | Girdi | Çıktı |
 |---|---|
@@ -32,7 +30,7 @@ Sadece “yaparım...”
 
 > Tam sessizlik isteyen bilir.
 
-### Ortadaki alan
+## Ortadaki alan
 
 Oduncu, tool çağrı kartlarını (`Bash(...)`, `Read(...)`) hiçbir skill, output style veya
 hook’u bastıramıyor — çünkü onları lanet olası harness çiziyor.
@@ -43,11 +41,11 @@ Yine de mücadelesini veriyor, bastıramıyor ama azaltıyor.
 - düzenleme + doğrulama → tek çağrı
 - çok adımlı kabuk işi → tek heredoc
 
-### Kesilmeyen tek şey doğrulama
+## Kesilmeyen tek şey doğrulama
 
 Test çalışır, build çalışır. Her şey **o tek kelime**nin doğru olması için.
 
-### Sessizliğin bozulduğu bazı yerler
+## Sessizliğin bozulduğu bazı yerler
 
 **Köylü de bazen baş kaldırır.** Ama sor bir niye.
 
@@ -62,7 +60,7 @@ Bunlar stil değil, güvenlik.
 
 Hepsi tek satır. Sonra tekrar susar. Gerisini sen bilirsin.
 
-### Kurulum
+## Kurulum
 
 ```bash
 npx oduncu install
@@ -93,7 +91,7 @@ Tek `SKILL.md`, altı konum:
 Sadece bir proje için istersen `skills/oduncu/` klasörünü `.claude/skills/`,
 `./.codex/skills/` veya `.agents/skills/` içine kopyalayıp commit et.
 
-### Kullanım
+## Kullanım
 
 ```
 /oduncu kalk        # aç
@@ -112,38 +110,25 @@ Sadece bir proje için istersen `skills/oduncu/` klasörünü `.claude/skills/`,
 dört ifade her oturumda Türkçe, nesir senin yazdığın dilde. Kod ve commit mesajı hiçbirinden
 etkilenmez.
 
-### Token tasarrufu: yaparım...
+## Token tasarrufu: yaparım...
 
 Oduncu ~17% tasarruf sağlar evet, ama sandığın sebepten değil.
 Ayrıca token tasarrufunu da garanti etmez, o sadece yapar. :)
 
-### Sınırlar
+## Sınırlar
 
 Sohbet dışına yazılan her şey normal: kod, commit mesajı, PR metni, dokümantasyon.
 Sessizlik sohbet için, çıktı için değil.
 
-### Lisans ve haklar
-
-Kod ve dokümantasyon MIT lisansı ile — ayrıntısı [`LICENSE`](./LICENSE) dosyasında.
-
-**Age of Empires**, Microsoft Corporation'ın tescilli markasıdır. Bu proje bağımsız ve
-gayriresmî bir çalışmadır; Microsoft ile hiçbir bağlantısı yoktur, Microsoft tarafından
-desteklenmemekte, onaylanmamakta veya sponsor edilmemektedir.
-
-Depoda oyuna ait hiçbir varlık kullanılmıyor — ne görsel, ne ses, ne kod, ne metin.
-`assets/` altındaki çizimler döneme öykünen özgün piksel işleridir. "Oduncu" adı ile
-`yaparım` ve `tamam` sözcükleri, oyunun Türkçe dublajına yapılmış bir nostalji göndermesidir
-ve yalnızca tanımlayıcı amaçla kullanılır.
-
 ---
 
-## English
+# English
 
 Give it a task, it says “yaparım...” — *I'll do it* — and does it. It never tells you what it
 is doing, **because it is already doing it.** When it's finished it says “tamam.” — *done* —
 and not one word more. Because it is the **villager** from Age of Empires II.
 
-### What it does
+## What it does
 
 | Input | Output |
 |---|---|
@@ -159,7 +144,7 @@ Just “yaparım...”
 
 > If you want real silence, you already know.
 
-### The middle ground
+## The middle ground
 
 Oduncu cannot suppress the tool call cards (`Bash(...)`, `Read(...)`) — no skill, output
 style or hook can, because the damned harness draws them.
@@ -170,11 +155,11 @@ It fights anyway. It can't silence them, but it thins them out.
 - edit + verification → one call
 - multi-step shell work → one heredoc
 
-### The one thing never cut: verification
+## The one thing never cut: verification
 
 Tests run, builds run. All of it so that **that single word** is true.
 
-### Where the silence breaks
+## Where the silence breaks
 
 **Even the villager talks back sometimes.** But ask him why first.
 
@@ -189,7 +174,7 @@ These aren't style, they're safety.
 
 One line each. Then it goes quiet again. The rest is up to you.
 
-### Install
+## Install
 
 ```bash
 npx oduncu install
@@ -220,7 +205,7 @@ One `SKILL.md`, six locations:
 For a single project instead, copy the `skills/oduncu/` directory into `.claude/skills/`,
 `./.codex/skills/` or `.agents/skills/` and commit it.
 
-### Usage
+## Usage
 
 ```
 /oduncu kalk        # on
@@ -240,17 +225,17 @@ paragraph about it.
 the four strings are Turkish in every session, prose follows whatever language you write in.
 Code and commit messages are untouched by either.
 
-### Token savings: yaparım...
+## Token savings: yaparım...
 
 Oduncu saves around 17%, yes — but not for the reason you think.
 It also doesn't guarantee any savings. It just does the work. :)
 
-### Boundaries
+## Boundaries
 
 Everything written outside the chat stays normal: code, commit messages, PR text,
 documentation. The silence is for the conversation, not for the output.
 
-### License and rights
+## License and rights
 
 Code and documentation are MIT licensed — details in [`LICENSE`](./LICENSE).
 

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/erayendes/oduncu/security/advisories/new
+    about: Report privately, never as a public issue. See SECURITY.md.
+  - name: Install locations and troubleshooting
+    url: https://github.com/erayendes/oduncu/blob/main/.github/SUPPORT.md
+    about: Skill not triggering, "No agent found", language switched — start with the troubleshooting table.
