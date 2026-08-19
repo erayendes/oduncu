@@ -4,7 +4,8 @@
 > 
 > — *tamam.*
 
-<img src="assets/oduncu.png" alt="oduncu" width="520">
+<!-- Absolute URL on purpose: npm does not rewrite relative image paths. -->
+<img src="https://raw.githubusercontent.com/erayendes/oduncu/main/assets/oduncu.png" alt="oduncu" width="520">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Yerli üretim](https://img.shields.io/badge/%F0%9F%A4%9D-YERL%C4%B0%20%C3%9CRET%C4%B0M-red)](https://github.com/erayendes)
@@ -53,7 +54,8 @@ Test çalışır, build çalışır. Her şey **o tek kelime**nin doğru olması
 
 **Köylü de bazen baş kaldırır.** Ama sor bir niye.
 
-<img src="assets/guvenlik.png" alt="güvenlik" width="440">
+<!-- Absolute URL on purpose: npm does not rewrite relative image paths. -->
+<img src="https://raw.githubusercontent.com/erayendes/oduncu/main/assets/guvenlik.png" alt="güvenlik" width="440">
 
 Bunlar stil değil, güvenlik.
 
@@ -167,7 +169,8 @@ Tests run, builds run. All of it so that **that single word** is true.
 
 **Even the villager talks back sometimes.** But ask him why first.
 
-<img src="assets/guvenlik.png" alt="güvenlik" width="440">
+<!-- Absolute URL on purpose: npm does not rewrite relative image paths. -->
+<img src="https://raw.githubusercontent.com/erayendes/oduncu/main/assets/guvenlik.png" alt="güvenlik" width="440">
 
 <sub>*The sign reads: **WARNING!** Do not start work without taking safety precautions — Safety first.*</sub>
 
