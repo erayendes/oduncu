@@ -1,10 +1,16 @@
-**Hayatını değiştiren o iki sözcük** *The two words that change everything*
+**Hayatını değiştiren o iki sözcük**
 
 > — *yaparım...*
 > 
 > — *tamam.*
 
 <img src="assets/oduncu.png" alt="oduncu" width="520">
+
+[![npm](https://img.shields.io/npm/v/oduncu?style=flat-square&color=cb3837&label=npm)](https://www.npmjs.com/package/oduncu)
+[![CI](https://img.shields.io/github/actions/workflow/status/erayendes/oduncu/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/erayendes/oduncu/actions/workflows/ci.yml)
+[![lisans](https://img.shields.io/badge/lisans-MIT-blue?style=flat-square)](./LICENSE)
+[![bağımlılık](https://img.shields.io/badge/ba%C4%9F%C4%B1ml%C4%B1l%C4%B1k-0-brightgreen?style=flat-square)](./package.json)
+![yerli üretim](https://img.shields.io/badge/yerli-%C3%BCretim-e30a17?style=flat-square)
 
 🇹🇷 [Türkçe](#oduncu) · 🇬🇧 [English](#english)
 
