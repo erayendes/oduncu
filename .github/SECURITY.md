@@ -23,7 +23,7 @@ The whole thing is small enough to read in one sitting: [`bin/oduncu.js`](../bin
 
 ### Reporting a vulnerability
 
-Do not open a public issue. Use [private vulnerability reporting](https://github.com/erayendes/oduncu/security/advisories/new). You will get a response within a few days.
+Use [private vulnerability reporting](https://github.com/erayendes/oduncu/security/advisories/new), or mail **erayendes@gmail.com**. You will get a response within a few days.
 
 ## Türkçe
 
@@ -46,4 +46,4 @@ Tamamı tek oturuşta okunacak kadar küçük: [`bin/oduncu.js`](../bin/oduncu.j
 
 ### Güvenlik açığı bildirimi
 
-Herkese açık issue açma. [Özel güvenlik bildirimi](https://github.com/erayendes/oduncu/security/advisories/new) kullan. Birkaç gün içinde yanıt alırsın.
+[Özel güvenlik bildirimi](https://github.com/erayendes/oduncu/security/advisories/new) kullan ya da **erayendes@gmail.com** adresine yaz. Birkaç gün içinde yanıt alırsın.

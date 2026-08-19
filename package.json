@@ -30,9 +30,6 @@
     "type": "git",
     "url": "git+https://github.com/erayendes/oduncu.git"
   },
-  "bugs": {
-    "url": "https://github.com/erayendes/oduncu/issues"
-  },
   "homepage": "https://github.com/erayendes/oduncu#readme",
   "author": "erayendes",
   "license": "MIT",

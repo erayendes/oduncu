@@ -4,10 +4,6 @@
 
 <!-- Tek cümlede: ne değişti, neden gerekti. -->
 
-## Related issue
-
-Closes #
-
 ## Checklist
 
 - [ ] `node bin/oduncu.js install --dry-run --all` lists every target correctly

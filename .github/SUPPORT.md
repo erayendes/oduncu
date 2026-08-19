@@ -6,8 +6,8 @@
 
 ### Getting help
 
-- **Bug or unexpected behaviour?** Open an [issue](https://github.com/erayendes/oduncu/issues) with the agent you use (Claude Code, Codex, …), the command you ran, and what happened.
-- **Security concern?** Don't open a public issue — see [SECURITY.md](SECURITY.md).
+- **Bug or unexpected behaviour?** This repository has issues turned off. Open a [pull request](https://github.com/erayendes/oduncu/pulls) with the fix, or mail **erayendes@gmail.com** with the agent you use (Claude Code, Codex, …), the command you ran, and what happened.
+- **Security concern?** See [SECURITY.md](SECURITY.md) for private reporting.
 - **Question about the mode itself?** The [README](../README.md) and [`SKILL.md`](../skills/oduncu/SKILL.md) are the full specification — there is nothing else.
 
 ### Troubleshooting
@@ -28,8 +28,8 @@ Oduncu is free and open. If it makes your sessions quieter, a [coffee](https://b
 
 ### Yardım almak
 
-- **Hata veya beklenmedik davranış?** Kullandığın ajan (Claude Code, Codex, …), çalıştırdığın komut ve ne olduğuyla birlikte bir [issue](https://github.com/erayendes/oduncu/issues) aç.
-- **Güvenlik endişesi?** Herkese açık issue açma — [SECURITY.md](SECURITY.md)'ye bak.
+- **Hata veya beklenmedik davranış?** Bu depoda issue kapalı. Düzeltmeyle bir [pull request](https://github.com/erayendes/oduncu/pulls) aç, ya da kullandığın ajan (Claude Code, Codex, …), çalıştırdığın komut ve ne olduğuyla birlikte **erayendes@gmail.com** adresine yaz.
+- **Güvenlik endişesi?** Özel bildirim için [SECURITY.md](SECURITY.md)'ye bak.
 - **Modun kendisi hakkında soru?** [README](../README.md) ve [`SKILL.md`](../skills/oduncu/SKILL.md) tam spesifikasyon — başka bir şey yok.
 
 ### Sorun giderme
