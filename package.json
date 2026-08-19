@@ -2,14 +2,41 @@
   "name": "oduncu",
   "version": "0.0.1",
   "description": "Silent-executor mode for coding agents. Give it a task, it says \"yaparım...\", works, says \"tamam.\" Nothing in between.",
-  "bin": { "oduncu": "bin/oduncu.js" },
-  "files": ["bin", "skills", "benchmarks", "README.md", "LICENSE"],
-  "scripts": { "test": "node bin/oduncu.js where" },
-  "keywords": ["agent-skill", "skill", "claude-code", "codex", "antigravity", "gemini-cli", "cursor", "agents-md", "silent", "terse"],
-  "repository": { "type": "git", "url": "git+https://github.com/erayendes/oduncu.git" },
-  "bugs": { "url": "https://github.com/erayendes/oduncu/issues" },
+  "bin": {
+    "oduncu": "bin/oduncu.js"
+  },
+  "files": [
+    "bin",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node bin/oduncu.js where"
+  },
+  "keywords": [
+    "agent-skill",
+    "skill",
+    "claude-code",
+    "codex",
+    "antigravity",
+    "gemini-cli",
+    "cursor",
+    "agents-md",
+    "silent",
+    "terse"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erayendes/oduncu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erayendes/oduncu/issues"
+  },
   "homepage": "https://github.com/erayendes/oduncu#readme",
   "author": "erayendes",
   "license": "MIT",
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  }
 }
