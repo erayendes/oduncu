@@ -1,0 +1,74 @@
+name: Bug report
+description: Something behaves differently than SKILL.md or the README says.
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before you post:** check the
+        [troubleshooting table](https://github.com/erayendes/oduncu/blob/main/.github/SUPPORT.md#troubleshooting)
+        — skill not triggering and installer "No agent found" both have known causes.
+
+        Türkçe yazabilirsiniz.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you said or ran, what the agent or installer did, and what you expected instead.
+      placeholder: |
+        I said /oduncu kalk, gave it a task, and it wrote a three-paragraph summary after tamam.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Where is the bug
+      options:
+        - The skill (agent behaviour, the four strings, commands)
+        - The installer (npx oduncu install / uninstall / where)
+        - Documentation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent
+      description: Skill wording drifts differently per agent, so this matters.
+      options:
+        - Claude Code
+        - Codex
+        - Antigravity
+        - Gemini CLI
+        - Cursor
+        - Other (name it below)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Oduncu version
+      description: From `npm ls oduncu`, or the version you ran with `npx oduncu@x.y.z`.
+      placeholder: 0.0.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      description: Install paths differ per platform.
+      options:
+        - macOS
+        - Windows
+        - Linux
+
+  - type: textarea
+    id: transcript
+    attributes:
+      label: Transcript or output
+      description: The relevant exchange with the agent, or the installer output. Rendered as a code block — no backticks needed.
+      render: text
