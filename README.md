@@ -37,6 +37,9 @@ Sadece “yaparım...”
 
 ## Bir örnek
 
+<!-- Absolute URL on purpose: npm does not rewrite relative image paths. -->
+<img src="https://raw.githubusercontent.com/erayendes/oduncu/main/assets/demo-tr.gif" alt="Aynı görev, iki ajan" width="720">
+
 **Oduncu'dan Önce**
 
 > **Kullanıcı:** "MIL-241 maddesini yap."
@@ -181,6 +184,9 @@ Just “yaparım...”
 > If you want real silence, you already know.
 
 ## An example
+
+<!-- Absolute URL on purpose: npm does not rewrite relative image paths. -->
+<img src="https://raw.githubusercontent.com/erayendes/oduncu/main/assets/demo-en.gif" alt="Same task, two agents" width="720">
 
 **Before oduncu**
 
