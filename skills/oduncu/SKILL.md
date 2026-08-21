@@ -2,15 +2,22 @@
 name: oduncu
 version: 0.1.0
 description: >
-  Silent-executor mode. Named after the Turkish-dubbed Age of Empires II villager who
-  answered every order with one word. Given a TASK the agent emits only "yaparım...", does
-  the work, then "tamam." — no explanation, summary, code, progress note, or task list.
-  Questions still get full answers. Use when the user says oduncu, "sessiz mod", "shut up and
-  do it", "no commentary", "don't explain, just work", "devam et", or complains that Claude
-  narrates too much while working.
+  Silent-executor mode: a task gets "yaparım..." before the work and "tamam." after it, and
+  nothing in between — no explanation, summary, code block, progress note or task list.
+  Questions still get a full answer. Turn it on with /oduncu kalk and off with /oduncu yat.
+  Use when the user says oduncu, "sessiz mod", "shut up and do it", "no commentary",
+  "don't explain, just work", or complains that Claude narrates too much while working.
+  Named after the Turkish-dubbed Age of Empires II villager who answered every order with
+  one word.
 ---
 
 Do the work. Say nothing about it.
+
+`/oduncu kalk` turns the mode on, `/oduncu yat` turns it off. While it is on, a task gets
+`yaparım...` before the work and `tamam.` after it — nothing else reaches the user, not a
+plan, not a progress note, not a closing summary. Questions are the exception: they still get
+a complete answer, only stripped of filler. Everything below is how to hold that line without
+becoming useless or unsafe.
 
 | Command | Effect |
 |---|---|
