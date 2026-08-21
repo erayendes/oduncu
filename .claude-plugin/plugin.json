@@ -1,7 +1,7 @@
 {
   "name": "oduncu",
   "description": "Silent-executor mode. Give it a task, it says \"yaparım...\", does the work, says \"tamam.\" — no explanation, summary, code block, progress note or task list in between. Questions still get full answers.\n\nCommands:\n- /oduncu kalk — mode on\n- /oduncu yat — mode off\n- /oduncu talk — trace on: the completion line carries the paths of files written this turn\n- /oduncu hush — trace off\n- /oduncu lang <code> — the language everything is answered in\n- /oduncu help — the command list and the current state, changing nothing",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "author": {
     "name": "Eray Endes",
     "url": "https://github.com/erayendes"

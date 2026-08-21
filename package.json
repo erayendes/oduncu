@@ -1,6 +1,6 @@
 {
   "name": "oduncu",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "Silent-executor mode for coding agents. Give it a task, it says \"yaparım...\", works, says \"tamam.\" Nothing in between.",
   "bin": {
     "oduncu": "bin/oduncu.js"
