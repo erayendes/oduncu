@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "oduncu",
-      "description": "Task in, \"yaparım...\" out, work happens, \"tamam.\" No narration in between. Questions still get full answers.",
+      "description": "Task in, \"yaparım...\" out, work happens, \"tamam.\" No narration in between; questions still get full answers. Commands: kalk (on), yat (off), talk / hush (file trace on the completion line), lang <code> (answer language), help (command list and current state).",
       "source": "./",
       "category": "productivity"
     }

@@ -1,6 +1,6 @@
 {
   "name": "oduncu",
-  "description": "Silent-executor mode. Give it a task, it says \"yaparım...\", does the work, says \"tamam.\" — no explanation, summary, code block, progress note or task list in between. Questions still get full answers.",
+  "description": "Silent-executor mode. Give it a task, it says \"yaparım...\", does the work, says \"tamam.\" — no explanation, summary, code block, progress note or task list in between. Questions still get full answers.\n\nCommands: /oduncu kalk turns the mode on and /oduncu yat turns it off. /oduncu talk appends the paths of files written this turn to the completion line, /oduncu hush takes them away again. /oduncu lang <code> sets the language everything is answered in — the four strings stay Turkish by default in every session, prose follows whatever language you write in. /oduncu help prints the command list and the current state without changing anything.",
   "version": "0.1.0",
   "author": {
     "name": "Eray Endes",
