@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "oduncu",
+  "description": "Silent-executor mode for coding agents — the Age of Empires II villager as a skill.",
+  "owner": {
+    "name": "Eray Endes",
+    "url": "https://github.com/erayendes"
+  },
+  "plugins": [
+    {
+      "name": "oduncu",
+      "description": "Task in, \"yaparım...\" out, work happens, \"tamam.\" No narration in between. Questions still get full answers.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

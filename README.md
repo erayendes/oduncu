@@ -116,6 +116,13 @@ npx oduncu where                         # yollar ve mevcut durum
 npx oduncu uninstall                     # her yerden kaldır
 ```
 
+Claude Code kullanıyorsan plugin olarak da kurulabilir:
+
+```
+/plugin marketplace add erayendes/oduncu
+/plugin install oduncu@oduncu
+```
+
 Tek `SKILL.md`, altı konum:
 
 | Ajan | Global skill klasörü |
@@ -264,6 +271,13 @@ npx oduncu install --all                 # every known location
 npx oduncu install --dry-run             # show what would happen
 npx oduncu where                         # paths and current state
 npx oduncu uninstall                     # remove it everywhere
+```
+
+On Claude Code it also installs as a plugin:
+
+```
+/plugin marketplace add erayendes/oduncu
+/plugin install oduncu@oduncu
 ```
 
 One `SKILL.md`, six locations:
