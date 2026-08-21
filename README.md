@@ -130,8 +130,15 @@ etkilenmez.
 
 ## Token tasarrufu: yaparım...
 
-Oduncu ~17% tasarruf sağlar evet, ama sandığın sebepten değil.
-Ayrıca token tasarrufunu da garanti etmez, o sadece yapar. :)
+Ölçüldü. Beş görevde çıktı tokeni medyan %7, altı promptun havuzunda %13 düşüyor —
+ama asıl rakam bu değil. Okuduğun metin %96 azalıyor: beş görevin dördünde tüm çıktı
+`tamam.`, yani altı karakter.
+
+Token tarafı görevden göreve %45 düşüşle %4 artış arasında geziniyor, çünkü tokenler
+yok olmuyor, yer değiştiriyor — nesir gidiyor, tool çağrıları kalıyor. Sabit bir yüzde
+vaat eden herkes atıyordur.
+
+Yöntem, ham sayılar ve uyarılar: [`benchmarks/`](benchmarks/2026-08-21-oduncu-vs-baseline.md)
 
 ## Sınırlar
 
@@ -260,8 +267,15 @@ Code and commit messages are untouched by either.
 
 ## Token savings: yaparım...
 
-Oduncu saves around 17%, yes — but not for the reason you think.
-It also doesn't guarantee any savings. It just does the work. :)
+Measured. Output tokens drop by a median of 7% across five tasks, 13% pooled across
+all six prompts — but that is not the number that matters. The text you read drops by
+96%: on four of the five tasks the entire output was `tamam.`, six characters.
+
+The token side swings from −45% to +4% depending on the task, because the tokens do not
+vanish, they move — prose goes, tool calls stay. Anyone promising a fixed percentage is
+guessing.
+
+Method, raw numbers and caveats: [`benchmarks/`](benchmarks/2026-08-21-oduncu-vs-baseline.md)
 
 ## Boundaries
 
