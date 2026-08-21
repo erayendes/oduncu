@@ -35,8 +35,6 @@ Sadece “yaparım...”
 
 > Tam sessizlik isteyen bilir.
 
-## Bir örnek
-
 <!-- Absolute URL on purpose: npm does not rewrite relative image paths. -->
 <img src="https://raw.githubusercontent.com/erayendes/oduncu/main/assets/demo-tr.gif" alt="Aynı görev, iki ajan" width="720">
 
@@ -130,15 +128,9 @@ etkilenmez.
 
 ## Token tasarrufu: yaparım...
 
-Ölçüldü. Beş görevde çıktı tokeni medyan %7, altı promptun havuzunda %13 düşüyor —
-ama asıl rakam bu değil. Okuduğun metin %96 azalıyor: beş görevin dördünde tüm çıktı
-`tamam.`, yani altı karakter.
+Oduncu elinden geleni yapar. Ama token tasarrufunu garanti etmez, o sadece yapar.
 
-Token tarafı görevden göreve %45 düşüşle %4 artış arasında geziniyor, çünkü tokenler
-yok olmuyor, yer değiştiriyor — nesir gidiyor, tool çağrıları kalıyor. Sabit bir yüzde
-vaat eden herkes atıyordur.
-
-Yöntem, ham sayılar ve uyarılar: [`benchmarks/`](benchmarks/2026-08-21-oduncu-vs-baseline.md)
+Token tasarrufu için bkz: [caveman](https://github.com/JuliusBrussee/caveman)
 
 ## Sınırlar
 
@@ -168,8 +160,6 @@ No “great question!” — ever.
 Just “yaparım...”
 
 > If you want real silence, you already know.
-
-## An example
 
 <!-- Absolute URL on purpose: npm does not rewrite relative image paths. -->
 <img src="https://raw.githubusercontent.com/erayendes/oduncu/main/assets/demo-en.gif" alt="Same task, two agents" width="720">
@@ -267,15 +257,9 @@ Code and commit messages are untouched by either.
 
 ## Token savings: yaparım...
 
-Measured. Output tokens drop by a median of 7% across five tasks, 13% pooled across
-all six prompts — but that is not the number that matters. The text you read drops by
-96%: on four of the five tasks the entire output was `tamam.`, six characters.
+Oduncu does what it can. But it guarantees no token savings — it just does the work.
 
-The token side swings from −45% to +4% depending on the task, because the tokens do not
-vanish, they move — prose goes, tool calls stay. Anyone promising a fixed percentage is
-guessing.
-
-Method, raw numbers and caveats: [`benchmarks/`](benchmarks/2026-08-21-oduncu-vs-baseline.md)
+For token savings, see [caveman](https://github.com/JuliusBrussee/caveman).
 
 ## Boundaries
 
