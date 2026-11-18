@@ -126,9 +126,28 @@ Sadece bir proje için istersen `skills/oduncu/` klasörünü `.claude/skills/`,
 dört ifade her oturumda Türkçe, nesir senin yazdığın dilde. Kod ve commit mesajı hiçbirinden
 etkilenmez.
 
+## Geçmişten öğren
+
+```bash
+npx oduncu learn            # bu projenin Claude Code oturumları
+npx oduncu learn --all      # tüm projeler
+npx oduncu savings [--all]  # oduncu açıkken ve kapalıyken tur başına çıktı token'ı
+```
+
+`learn` geçmiş oturumlarına bakar: uzun yanıtları kestiğin, “kısa”, “çok uzun yazıyorsun”
+dediğin yerler varsa `/oduncu kalk`, oduncu açıkken “ne yaptın?” diye sorduysan
+`/oduncu talk` önerir. Alıntılarıyla gösterir, ayarı kendisi değiştirmez; komutu sen yazarsın.
+
+`savings` oduncu açık ve kapalı turların çıktı token'ını karşılaştırır. İki grup farklı işler
+yaptığı için sonuç **tahmini**dir; her grupta beş oturum yoksa sayı vermez.
+
+İkisi de sadece `~/.claude/projects/` altındaki kayıtları okur. Hiçbir yere bir şey gönderilmez.
+
 ## Token tasarrufu: yaparım...
 
 Oduncu elinden geleni yapar. Ama token tasarrufunu garanti etmez, o sadece yapar.
+
+Kendi oturumlarındaki tahmini fark için: `npx oduncu savings`.
 
 Token tasarrufu için bkz: [caveman](https://github.com/JuliusBrussee/caveman)
 
@@ -255,9 +274,29 @@ paragraph about it.
 the four strings are Turkish in every session, prose follows whatever language you write in.
 Code and commit messages are untouched by either.
 
+## Learn from your history
+
+```bash
+npx oduncu learn            # this project's Claude Code sessions
+npx oduncu learn --all      # every project
+npx oduncu savings [--all]  # output tokens per turn, oduncu on vs off
+```
+
+`learn` reads your past sessions: if you cut long replies short or said “shorter”, “too
+long”, it suggests `/oduncu kalk`; if you asked “what did you do?” while oduncu was on, it
+suggests `/oduncu talk`. It shows the quotes and changes nothing; you type the command.
+
+`savings` compares output tokens on turns with oduncu on and off. The two groups did
+different work, so the number is an **estimate**, and it gives none until each group has five
+sessions.
+
+Both only read the transcripts under `~/.claude/projects/`. Nothing is sent anywhere.
+
 ## Token savings: yaparım...
 
 Oduncu does what it can. But it guarantees no token savings — it just does the work.
+
+For an estimate from your own sessions: `npx oduncu savings`.
 
 For token savings, see [caveman](https://github.com/JuliusBrussee/caveman).
 

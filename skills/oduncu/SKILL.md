@@ -159,6 +159,8 @@ Print, in the user's language:
 
 - the six commands and what each does, as a table
 - one closing line naming the current state — mode on or off, trace on or off, language
+- one line saying that `npx oduncu learn` suggests whether to turn the mode or the trace on,
+  from past sessions, and `npx oduncu savings` estimates the output tokens it saves
 
 Nothing else. No philosophy, no examples, no explanation of why the mode exists. If they
 want that, the README is where it lives.
