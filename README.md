@@ -55,7 +55,7 @@ Test çalışır, build çalışır. Her şey **o tek kelime**nin doğru olması
 
 ## Sessizliğin bozulduğu bazı yerler
 
-**Köylü de bazen baş kaldırır.** Ama sor bir niye.
+**Köylü de bazen baş kaldırır.** Ama bir sorun, niye.
 
 <!-- Absolute URL on purpose: npm does not rewrite relative image paths. -->
 <img src="https://raw.githubusercontent.com/erayendes/oduncu/main/assets/guvenlik.png" alt="güvenlik" width="440">
@@ -67,7 +67,7 @@ Bunlar stil değil, güvenlik.
 - Ortaya çıkan kimlik bilgisi / güvenlik açığı
 - Kullanıcının aynı isteği tekrar etmesi
 
-Hepsi tek satır. Sonra tekrar susar. Gerisini sen bilirsin.
+Hepsi tek satır. Sonra tekrar susar. Gerisini siz bilirsiniz.
 
 ## Kurulum
 
@@ -75,7 +75,7 @@ Hepsi tek satır. Sonra tekrar susar. Gerisini sen bilirsin.
 npx oduncu install
 ```
 
-Makinende bulduğu her ajana kurar. `npm i` sırasında hiçbir şey yazılmaz — ev dizinine
+Makinenizde bulduğu her ajana kurar. `npm i` sırasında hiçbir şey yazılmaz — ev dizinine
 dokunan bir `postinstall` hook'u yok, sadece bu komut.
 
 ```bash
@@ -86,14 +86,14 @@ npx oduncu where                         # yollar ve mevcut durum
 npx oduncu uninstall                     # her yerden kaldır
 ```
 
-Claude Code kullanıyorsan plugin olarak da kurulabilir:
+Claude Code kullanıyorsanız plugin olarak da kurulabilir:
 
 ```
 /plugin marketplace add erayendes/oduncu
 /plugin install oduncu@oduncu
 ```
 
-Plugin olarak kurulunca oduncu açık gelir ve açık kalır: `/oduncu kalk` yazmayı hatırlaman
+Plugin olarak kurulunca oduncu açık gelir ve açık kalır: `/oduncu kalk` yazmayı hatırlamanız
 gerekmez, `/oduncu yat` diyene kadar her yeni oturumda kendiliğinden açılır. `talk`, `hush` ve
 `lang` da oturumdan oturuma taşınır. Durum `~/.config/oduncu/state.json` dosyasında durur.
 
@@ -108,8 +108,8 @@ Tek `SKILL.md`, altı konum:
 | Cursor | `~/.cursor/skills/` |
 | Agent Skills standardı | `~/.agents/skills/` |
 
-Sadece bir proje için istersen `skills/oduncu/` klasörünü `.claude/skills/`,
-`./.codex/skills/` veya `.agents/skills/` içine kopyalayıp commit et.
+Sadece bir proje için isterseniz `skills/oduncu/` klasörünü `.claude/skills/`,
+`./.codex/skills/` veya `.agents/skills/` içine kopyalayıp commit edin.
 
 ## Kullanım
 
@@ -119,15 +119,15 @@ Sadece bir proje için istersen `skills/oduncu/` klasörünü `.claude/skills/`,
 /oduncu talk        # iz aç: tamam. satırına dosya yollarını ekler
 /oduncu hush        # iz kapat
 /oduncu lang [dil]  # yanıt dili
-/oduncu help        # komut listesi ve mevcut durum, senin dilinde
+/oduncu help        # komut listesi ve mevcut durum, sizin dilinizde
 ```
 
-`talk` açıkken `tamam.` yerine `tamam. src/app.ts, README.md` görürsün; `hush` çıplak
+`talk` açıkken `tamam.` yerine `tamam. src/app.ts, README.md` görürsünüz; `hush` çıplak
 `tamam.`'a döndürür. Ne dokunduğunu görmek isteyip paragraf okumak istemeyenler için.
 
-`lang` yanıt dilini değiştirir — `/oduncu lang en` dersen `yaparım...` yerine `will do...`,
-`tamam.` yerine `done.` alırsın, nesir cevaplar da İngilizceye geçer. Varsayılan ikili:
-dört ifade her oturumda Türkçe, nesir senin yazdığın dilde. Kod ve commit mesajı hiçbirinden
+`lang` yanıt dilini değiştirir — `/oduncu lang en` derseniz `yaparım...` yerine `will do...`,
+`tamam.` yerine `done.` alırsınız, nesir cevaplar da İngilizceye geçer. Varsayılan ikili:
+dört ifade her oturumda Türkçe, nesir sizin yazdığınız dilde. Kod ve commit mesajı hiçbirinden
 etkilenmez.
 
 ## Geçmişten öğren
@@ -138,14 +138,14 @@ npx oduncu learn --all      # tüm projeler
 npx oduncu savings [--all]  # oduncu açıkken ve kapalıyken tur başına çıktı token'ı
 ```
 
-`learn` geçmiş oturumlarına bakar: uzun yanıtları kestiğin, “kısa”, “çok uzun yazıyorsun”
-dediğin yerler varsa `/oduncu kalk`, oduncu açıkken “ne yaptın?” diye sorduysan
-`/oduncu talk` önerir. Alıntılarıyla gösterir, ayarı kendisi değiştirmez; komutu sen yazarsın.
+`learn` geçmiş oturumlarınıza bakar: uzun yanıtları kestiğiniz, “kısa”, “çok uzun yazıyorsun”
+dediğiniz yerler varsa `/oduncu kalk`, oduncu açıkken “ne yaptın?” diye sorduysanız
+`/oduncu talk` önerir. Alıntılarıyla gösterir, ayarı kendisi değiştirmez; komutu siz yazarsınız.
 
 `savings` oduncu açık ve kapalı turların çıktı token'ını karşılaştırır. İki grup farklı işler
 yaptığı için sonuç **tahmini**dir; her grupta beş oturum yoksa sayı vermez.
 
-Plugin kuruluysa ikisini de hatırlaman gerekmez. Yeni bir oturum açılırken, haftada en fazla
+Plugin kuruluysa ikisini de hatırlamanız gerekmez. Yeni bir oturum açılırken, haftada en fazla
 bir kez, yeterli sinyal birikmişse önerisini, her grupta beş oturum varsa tahmini tasarrufu ilk
 yanıtta tek satırla söyler. Veri yetmezse hiçbir şey demez.
 
@@ -155,7 +155,7 @@ yanıtta tek satırla söyler. Veri yetmezse hiçbir şey demez.
 
 Oduncu elinden geleni yapar. Ama token tasarrufunu garanti etmez, o sadece yapar.
 
-Kendi oturumlarındaki tahmini fark için: `npx oduncu savings`.
+Kendi oturumlarınızdaki tahmini fark için: `npx oduncu savings`.
 
 Token tasarrufu için bkz: [caveman](https://github.com/JuliusBrussee/caveman)
 
