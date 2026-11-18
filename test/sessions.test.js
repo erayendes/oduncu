@@ -59,11 +59,12 @@ test('learn suggests kalk and talk from the right signals only', () => {
     t('refactor', false, { interrupted: true }),
     t('ne yaptın?', true),
     t('what did you change', true),
+    t('hangi dosyalara dokundun', true),
     t('ne yaptın?', false), // oduncu off: not a trace request
   ] }]);
   assert.deepStrictEqual(r.signals.brevity, ['çok uzun yazıyorsun', 'kısa yanıt ver']);
   assert.deepStrictEqual(r.signals.interrupted, ['refactor']);
-  assert.deepStrictEqual(r.signals.trace, ['ne yaptın?', 'what did you change']);
+  assert.deepStrictEqual(r.signals.trace, ['ne yaptın?', 'what did you change', 'hangi dosyalara dokundun']);
   assert.deepStrictEqual(r.suggest, ['/oduncu kalk', '/oduncu talk']);
 });
 

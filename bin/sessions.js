@@ -38,7 +38,15 @@ function parseSession(text) {
     if (!line.trim()) continue;
     let e;
     try { e = JSON.parse(line); } catch { continue; }
-    if (e.isSidechain || !e.message) continue;
+    if (e.isSidechain) continue;
+    // The plugin hook announces the mode in its injected context.
+    if (e.attachment && e.attachment.type === 'hook_additional_context') {
+      const t = [].concat(e.attachment.content || []).join('\n');
+      if (t.includes('ODUNCU ON')) on = true;
+      else if (t.includes('ODUNCU OFF')) on = false;
+      continue;
+    }
+    if (!e.message) continue;
     const c = e.message.content;
 
     if (e.type === 'user') {
@@ -70,15 +78,29 @@ function parseSession(text) {
 }
 
 // Top-level *.jsonl only: subagent transcripts live in subfolders and are not the user's turns.
-function readSessions(dirs) {
-  const sessions = [];
+// The hook passes since/maxFiles/maxBytes to stay inside its timeout; newest files win.
+function readSessions(dirs, { since = 0, maxFiles = Infinity, maxBytes = Infinity } = {}) {
+  const files = [];
   for (const dir of dirs) {
-    let files;
-    try { files = fs.readdirSync(dir).filter((f) => f.endsWith('.jsonl')); } catch { continue; }
-    for (const f of files) {
-      const turns = parseSession(fs.readFileSync(path.join(dir, f), 'utf8'));
-      if (turns.length) sessions.push({ id: f.slice(0, -6), turns });
+    let names;
+    try { names = fs.readdirSync(dir).filter((f) => f.endsWith('.jsonl')); } catch { continue; }
+    for (const f of names) {
+      try {
+        const st = fs.statSync(path.join(dir, f));
+        if (st.mtimeMs > since) files.push({ file: path.join(dir, f), mtime: st.mtimeMs, size: st.size });
+      } catch { /* vanished */ }
     }
+  }
+  files.sort((a, b) => b.mtime - a.mtime);
+  const sessions = [];
+  let bytes = 0;
+  for (const f of files.slice(0, maxFiles)) {
+    if (bytes + f.size > maxBytes) continue;
+    bytes += f.size;
+    let text;
+    try { text = fs.readFileSync(f.file, 'utf8'); } catch { continue; }
+    const turns = parseSession(text);
+    if (turns.length) sessions.push({ id: path.basename(f.file, '.jsonl'), turns });
   }
   return sessions;
 }
@@ -89,6 +111,7 @@ function sessionDirs(all, cwd = process.cwd()) {
   try { return fs.readdirSync(root).map((d) => path.join(root, d)); } catch { return []; }
 }
 
+const MIN_SIGNALS = 3;
 const BREVITY = /(^|[^\p{L}])(kısa(?!(?: ?yol|ltmadan))|uzatma|özet geçme|çok uzun|lafı dolandırma|too long|tl;?dr|be brief|shorter|less verbose|more concise)/iu;
 const TRACE = /(ne yaptın|neyi değiştirdin|ne değişti|hangi dosya|what did you (do|change)|what changed|which files)/iu;
 
@@ -113,8 +136,8 @@ function learn(sessions) {
     trace: pick(turns.filter((t) => t.oduncu), (w) => TRACE.test(w)),
   };
   const suggest = [];
-  if (signals.interrupted.length + signals.brevity.length >= 3) suggest.push('/oduncu kalk');
-  if (signals.trace.length >= 2) suggest.push('/oduncu talk');
+  if (signals.interrupted.length + signals.brevity.length >= MIN_SIGNALS) suggest.push('/oduncu kalk');
+  if (signals.trace.length >= MIN_SIGNALS) suggest.push('/oduncu talk');
   return { sessions: sessions.length, turns: turns.length, on: turns.length - off.length, signals, suggest };
 }
 

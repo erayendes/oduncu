@@ -8,6 +8,7 @@
   "files": [
     "bin",
     "skills",
+    "hooks",
     "README.md",
     "LICENSE"
   ],

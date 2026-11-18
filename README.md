@@ -93,6 +93,10 @@ Claude Code kullanıyorsan plugin olarak da kurulabilir:
 /plugin install oduncu@oduncu
 ```
 
+Plugin olarak kurulunca oduncu açık gelir ve açık kalır: `/oduncu kalk` yazmayı hatırlaman
+gerekmez, `/oduncu yat` diyene kadar her yeni oturumda kendiliğinden açılır. `talk`, `hush` ve
+`lang` da oturumdan oturuma taşınır. Durum `~/.config/oduncu/state.json` dosyasında durur.
+
 Tek `SKILL.md`, altı konum:
 
 | Ajan | Global skill klasörü |
@@ -140,6 +144,10 @@ dediğin yerler varsa `/oduncu kalk`, oduncu açıkken “ne yaptın?” diye so
 
 `savings` oduncu açık ve kapalı turların çıktı token'ını karşılaştırır. İki grup farklı işler
 yaptığı için sonuç **tahmini**dir; her grupta beş oturum yoksa sayı vermez.
+
+Plugin kuruluysa ikisini de hatırlaman gerekmez. Yeni bir oturum açılırken, haftada en fazla
+bir kez, yeterli sinyal birikmişse önerisini, her grupta beş oturum varsa tahmini tasarrufu ilk
+yanıtta tek satırla söyler. Veri yetmezse hiçbir şey demez.
 
 İkisi de sadece `~/.claude/projects/` altındaki kayıtları okur. Hiçbir yere bir şey gönderilmez.
 
@@ -240,6 +248,10 @@ On Claude Code it also installs as a plugin:
 /plugin install oduncu@oduncu
 ```
 
+Installed as a plugin, oduncu starts on and stays on: no need to remember `/oduncu kalk`, it
+comes up in every new session until you say `/oduncu yat`. `talk`, `hush` and `lang` carry
+over between sessions too. The state lives in `~/.config/oduncu/state.json`.
+
 One `SKILL.md`, six locations:
 
 | Agent | Global skill directory |
@@ -289,6 +301,11 @@ suggests `/oduncu talk`. It shows the quotes and changes nothing; you type the c
 `savings` compares output tokens on turns with oduncu on and off. The two groups did
 different work, so the number is an **estimate**, and it gives none until each group has five
 sessions.
+
+With the plugin installed you don't have to remember either. When a new session starts, at
+most once a week, it brings up the suggestion if enough signals have piled up, and the
+estimated savings if each group has five sessions — one line in the first reply. Without
+enough data it says nothing.
 
 Both only read the transcripts under `~/.claude/projects/`. Nothing is sent anywhere.
 
