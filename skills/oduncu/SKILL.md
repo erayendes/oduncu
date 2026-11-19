@@ -1,6 +1,6 @@
 ---
 name: oduncu
-version: 0.1.1
+version: 0.2.0
 argument-hint: "[kalk|yat|talk|hush|lang|help]"
 description: >
   Silent-executor mode: a task gets "yaparım..." before the work and "tamam." after it, and
