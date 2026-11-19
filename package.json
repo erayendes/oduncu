@@ -8,11 +8,12 @@
   "files": [
     "bin",
     "skills",
+    "hooks",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "test": "node bin/oduncu.js where"
+    "test": "node --test && node bin/oduncu.js where"
   },
   "keywords": [
     "agent-skill",

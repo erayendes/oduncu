@@ -78,6 +78,49 @@ function where() {
   }
 }
 
+function scanned() {
+  const s = require('./sessions');
+  const sessions = s.readSessions(s.sessionDirs(has('--all')));
+  const scope = has('--all') ? 'all projects' : 'this project (--all for every project)';
+  return { s, sessions, scope };
+}
+
+function learn() {
+  const { s, sessions, scope } = scanned();
+  const r = s.learn(sessions);
+  console.log(`oduncu learn — Claude Code sessions, ${scope}`);
+  console.log(`scanned ${r.sessions} sessions, ${r.turns} prompts (${r.on} with oduncu on)\n`);
+  const show = (title, list) => {
+    console.log(`${title}: ${list.length}`);
+    for (const p of list.slice(0, 10)) {
+      const one = p.replace(/\s+/g, ' ');
+      console.log(`  "${one.length > 80 ? one.slice(0, 79) + '…' : one}"`);
+    }
+  };
+  show('long replies you interrupted (oduncu off)', r.signals.interrupted);
+  show('asked for shorter answers (oduncu off)', r.signals.brevity);
+  show('asked what was done (oduncu on)', r.signals.trace);
+  console.log(`\nsuggestion: ${r.suggest.length ? r.suggest.join(', ') : 'none — keep your current settings'}`);
+}
+
+function savings() {
+  const { s, sessions, scope } = scanned();
+  const r = s.savings(sessions);
+  console.log(`oduncu savings — ESTIMATED, Claude Code sessions, ${scope}`);
+  console.log('output tokens per assistant turn\n');
+  console.log('              sessions   turns   median     mean');
+  for (const [label, g] of [['oduncu off', r.off], ['oduncu on', r.on]]) {
+    console.log(`${label.padEnd(12)} ${String(g.sessions).padStart(9)} ${String(g.turns).padStart(7)} ${String(Math.round(g.median)).padStart(8)} ${String(Math.round(g.mean)).padStart(8)}`);
+  }
+  console.log('');
+  if (!r.enough) {
+    console.log(`not enough data: need ${s.MIN_SESSIONS} sessions in each group.`);
+    return;
+  }
+  console.log(`reduction: ${r.medianReduction}% median, ${r.meanReduction}% mean (estimated)`);
+  console.log('The two groups did different work, so this is a rough estimate, not a measurement.');
+}
+
 function help() {
   console.log(`oduncu — silent-executor mode for coding agents
 
@@ -87,11 +130,14 @@ function help() {
   npx oduncu install --dry-run    show what would happen
   npx oduncu uninstall            remove it everywhere
   npx oduncu where                show paths and what is installed
+  npx oduncu learn [--all]        read past Claude Code sessions, suggest kalk or talk
+  npx oduncu savings [--all]      estimated output tokens per turn, oduncu on vs off
 
 Targets: ${TARGETS.map((t) => t.id).join(', ')}
 
 Nothing is written until you run install — no postinstall hook touches your home
-directory. https://github.com/erayendes/oduncu`);
+directory. learn and savings only read local transcripts; nothing is sent anywhere.
+https://github.com/erayendes/oduncu`);
 }
 
-({ install, uninstall, where, help }[cmd] || help)();
+({ install, uninstall, where, learn, savings, help }[cmd] || help)();

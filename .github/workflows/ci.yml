@@ -10,8 +10,8 @@ permissions:
 
 jobs:
   test:
-    # One job per platform is the whole matrix: the installer is 97 lines of
-    # path handling, and paths are the only thing that differs by OS.
+    # One job per platform is the whole matrix: the installer and the transcript
+    # reader are path handling, and paths are the only thing that differs by OS.
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -22,6 +22,7 @@ jobs:
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '20'
+      - run: node --test
       - run: node bin/oduncu.js where
       - run: node bin/oduncu.js install --dry-run --all
       - name: Install into a sandbox home, verify, uninstall

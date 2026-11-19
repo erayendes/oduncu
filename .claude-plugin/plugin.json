@@ -9,6 +9,7 @@
   "homepage": "https://github.com/erayendes/oduncu",
   "repository": "https://github.com/erayendes/oduncu",
   "license": "MIT",
+  "hooks": "./hooks/hooks.json",
   "keywords": [
     "skill",
     "silent",
